@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>canvas</title>
+  </head>
+  <body>
+    <canvas id="cv" width="500" height="500" style="border: solid"></canvas>
+    <!--
+    <input type="range" id="cv_range" min="0" max="1" value="0" step="any">
+    <input type="text" id="cv_range_view">
+    <script type="text/javascript">
+      document.getElementById('cv_range').onchange = function(e) {
+        document.getElementById('cv_range_view').value = e.target.value;
+      }
+    </script>
+    -->
+    <div style="font-family: Courier, monospace">
+      <div id="object"></div>
+      <div id="change_env">
+        <p>env</p>
+        <p>g <input type="text" id="change_g"></p>
+      </div>
+      <div id="change_all">
+        <p>change all:</p>
+        <p>m <input type="text" id="change_all_m"></p>
+        <p>r <input type="text" id="change_all_r"></p>
+        <p>k <input type="text" id="change_all_k"></p>
+        <p>c <input type="text" id="change_all_c"></p>
+      </div>
+      <table id="point_table">
+        <tr><td>name</td><td>fix</td></tr>
+      </table>
+      <input type="checkbox" id="point_name_visible">
+      <label for="point_name_visible">point_name_visible</label>      
+      <input type="checkbox" id="point_acceleration_arrow_visible">
+      <label for="point_acceleration_arrow_visible">point_acceleration_arrow_visible</label>
+    </div>
+    <script src="cv.js" charset="utf-8"></script>
+  </body>
+</html>
